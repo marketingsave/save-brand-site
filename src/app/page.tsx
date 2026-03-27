@@ -269,7 +269,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-[1440px] px-6">
           <span className="section-label">[00] brand guidelines</span>
 
-          <h1 className="mt-6 max-w-4xl text-5xl font-bold leading-tight tracking-tight md:text-7xl lg:text-8xl">
+          <h1 className="type-h1 mt-6 max-w-4xl">
             O ecossistema{" "}
             <span className="text-[var(--color-brand-gold)]">Save</span>
           </h1>
@@ -326,7 +326,7 @@ export default function Home() {
       >
         <div className="mx-auto max-w-[1440px] px-6">
           <span className="section-label">[01] visão geral</span>
-          <h2 className="mt-4 mb-6 text-3xl font-bold md:text-4xl">
+          <h2 className="type-h2 mt-4 mb-6">
             Ecossistema Save
           </h2>
           <p className="mb-16 max-w-3xl text-base leading-relaxed text-[var(--color-text-secondary)]">
@@ -370,7 +370,7 @@ export default function Home() {
       <section className="border-t border-[var(--color-surface-600)] py-24">
         <div className="mx-auto max-w-[1440px] px-6">
           <span className="section-label">[02] pilares do sistema</span>
-          <h2 className="mt-4 mb-12 text-3xl font-bold md:text-4xl">
+          <h2 className="type-h2 mt-4 mb-12">
             Explore o Brand System
           </h2>
 
@@ -438,7 +438,7 @@ export default function Home() {
       >
         <div className="mx-auto max-w-[1440px] px-6">
           <span className="section-label">[02.1] brand persona</span>
-          <h2 className="mt-4 mb-6 text-3xl font-bold md:text-4xl">
+          <h2 className="type-h2 mt-4 mb-6">
             O Estrategista Confiável
           </h2>
           <p className="mb-16 max-w-3xl text-base leading-relaxed text-[var(--color-text-secondary)]">
@@ -537,7 +537,7 @@ export default function Home() {
       >
         <div className="mx-auto max-w-[1440px] px-6">
           <span className="section-label">[02.2] tom de voz</span>
-          <h2 className="mt-4 mb-6 text-3xl font-bold md:text-4xl">
+          <h2 className="type-h2 mt-4 mb-6">
             Como Falamos
           </h2>
           <p className="mb-4 max-w-3xl text-base leading-relaxed text-[var(--color-text-secondary)]">
@@ -634,7 +634,7 @@ export default function Home() {
       >
         <div className="mx-auto max-w-[1440px] px-6">
           <span className="section-label">[08] cores funcionais</span>
-          <h2 className="mt-4 mb-6 text-3xl font-bold md:text-4xl">
+          <h2 className="type-h2 mt-4 mb-6">
             Paleta Funcional Compartilhada
           </h2>
           <p className="mb-12 text-base text-[var(--color-text-secondary)]">
@@ -667,7 +667,7 @@ export default function Home() {
       <section className="border-t border-[var(--color-surface-600)] py-24">
         <div className="mx-auto max-w-[1440px] px-6">
           <span className="section-label">[09] cultura</span>
-          <h2 className="mt-4 mb-12 text-3xl font-bold md:text-4xl">
+          <h2 className="type-h2 mt-4 mb-12">
             10 Princípios da Cultura Save
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
@@ -706,7 +706,7 @@ export default function Home() {
       >
         <div className="mx-auto max-w-[1440px] px-6">
           <span className="section-label">[10] referência rápida</span>
-          <h2 className="mt-4 mb-12 text-3xl font-bold md:text-4xl">
+          <h2 className="type-h2 mt-4 mb-12">
             Referência Rápida
           </h2>
 
@@ -809,7 +809,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1440px] px-6">
           <div className="mx-auto max-w-3xl text-center">
             <span className="section-label">[11] manifesto</span>
-            <blockquote className="mt-8 text-2xl leading-relaxed font-light text-[var(--color-text-primary)] md:text-3xl">
+            <blockquote className="type-h3 mt-8 font-light text-[var(--color-text-primary)]">
               &ldquo;Todo negócio começa como um sonho. Somos um ecossistema
               criado para estar ao seu lado. Oferecemos estrutura para suas
               decisões, inteligência à rotina e estratégia para impulsionar o

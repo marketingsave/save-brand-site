@@ -56,7 +56,7 @@ export default function BrandSection({
 
         <div className="mt-4 mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="text-4xl font-bold md:text-5xl">
+            <h2 className="type-h2">
               <span style={{ color: accentColor }}>{name}</span>
             </h2>
             <p className="mt-2 text-lg text-[var(--color-text-secondary)]">
@@ -100,7 +100,7 @@ export default function BrandSection({
 
         {/* Colors */}
         <div className="mb-16">
-          <h3 className="mb-8 text-xl font-semibold">Paleta de Cores</h3>
+          <h3 className="type-h3 mb-8">Paleta de Cores</h3>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             {colors.map((color) => (
               <ColorSwatch key={color.hex} {...color} />
@@ -110,7 +110,7 @@ export default function BrandSection({
 
         {/* Typography */}
         <div className="mb-16">
-          <h3 className="mb-8 text-xl font-semibold">Tipografia</h3>
+          <h3 className="type-h3 mb-8">Tipografia</h3>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="brand-card rounded-2xl bg-[var(--color-surface-800)] p-8">
               <span className="font-[var(--font-mono)] text-xs uppercase text-[var(--color-text-muted)]">
@@ -171,7 +171,7 @@ export default function BrandSection({
 
         {/* Logo Rules */}
         <div>
-          <h3 className="mb-8 text-xl font-semibold">
+          <h3 className="type-h3 mb-8">
             Regras de Uso do Logo
           </h3>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -199,7 +199,7 @@ export default function BrandSection({
           </div>
 
           <div className="brand-card mt-8 rounded-2xl bg-[var(--color-surface-800)] p-8">
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--color-functional-red)]">
+            <h4 className="type-label mb-4 tracking-wider text-[var(--color-functional-red)]">
               Proibido
             </h4>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">

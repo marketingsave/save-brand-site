@@ -36,10 +36,36 @@
   --color-functional-purple: #8E11FF;
   --color-functional-orange: #EFAF49;
 
-  /* Font families */
-  --font-display: "IBM Plex Sans", system-ui, sans-serif;
+  /* Font families — Save Brand System */
+  --font-display: "IBM Plex Sans", system-ui, sans-serif;  /* Save Co, Partners, Educação, ID */
   --font-body: "IBM Plex Sans", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-libria: "Golos Text", system-ui, sans-serif;       /* Libr.ia principal */
+  --font-libria-support: "Inter", system-ui, sans-serif;    /* Libr.ia apoio */
+
+  /* Type scale — baseada na hierarquia oficial Save (convertida pt → rem) */
+  /* H1: 140pt → ~9.7rem | H2: 55pt → ~3.8rem | H3: 34pt → ~2.4rem */
+  /* Body: 21pt → ~1.46rem | Descriptive: 18pt → ~1.25rem         */
+  --font-size-h1: clamp(3rem, 8vw, 9rem);
+  --font-size-h2: clamp(2rem, 5vw, 3.8rem);
+  --font-size-h3: clamp(1.5rem, 3vw, 2.4rem);
+  --font-size-body: clamp(1rem, 1.5vw, 1.25rem);
+  --font-size-desc: clamp(0.875rem, 1.2vw, 1.125rem);
+  --font-size-label: 0.75rem;
+
+  /* Line heights */
+  --leading-h1: 1.0;
+  --leading-h2: 1.09;
+  --leading-h3: 1.15;
+  --leading-body: 1.48;
+  --leading-desc: 1.17;
+
+  /* Font weights — IBM Plex Sans */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
 }
 
 /* Base styles */
@@ -51,8 +77,72 @@ body {
   background-color: var(--color-surface-900);
   color: var(--color-text-primary);
   font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--leading-body);
+  font-weight: var(--weight-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Hierarquia tipográfica oficial Save ─────────────────────── */
+
+/* H1 — 140pt / leading 140pt */
+.type-h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-h1);
+  line-height: var(--leading-h1);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.02em;
+}
+
+/* H2 — 55pt / leading 60pt */
+.type-h2 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-h2);
+  line-height: var(--leading-h2);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.01em;
+}
+
+/* H3 — 34pt / leading 39pt */
+.type-h3 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-h3);
+  line-height: var(--leading-h3);
+  font-weight: var(--weight-semibold);
+}
+
+/* Body — 21pt / leading 31pt */
+.type-body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--leading-body);
+  font-weight: var(--weight-regular);
+}
+
+/* Descriptive — 18pt / leading 21pt */
+.type-desc {
+  font-family: var(--font-body);
+  font-size: var(--font-size-desc);
+  line-height: var(--leading-desc);
+  font-weight: var(--weight-regular);
+}
+
+/* Label — kickers, labels, tags */
+.type-label {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── Libr.ia typography ──────────────────────────────────────── */
+.font-libria {
+  font-family: var(--font-libria);
+}
+.font-libria-support {
+  font-family: var(--font-libria-support);
 }
 
 /* Selection */
