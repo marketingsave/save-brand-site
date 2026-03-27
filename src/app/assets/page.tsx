@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import { brands, R2_BASE_URL } from "@/lib/assets-data";
 import type { BrandAsset } from "@/lib/assets-data";
 
@@ -142,19 +143,12 @@ function AssetsPage() {
       {/* Header */}
       <header className="border-b border-[var(--color-surface-600)] bg-[var(--color-surface-900)]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-brand-gold)]">
-              <span className="text-lg font-bold text-[var(--color-surface-900)]">S</span>
-            </div>
-            <div>
-              <span className="text-sm font-semibold tracking-wider uppercase text-[var(--color-text-primary)]">
-                Brand Assets
-              </span>
-              <span className="ml-2 rounded bg-[var(--color-surface-600)] px-2 py-0.5 font-[var(--font-mono)] text-[10px] text-[var(--color-text-muted)]">
-                {totalAssets} arquivos
-              </span>
-            </div>
-          </Link>
+          <div className="flex items-center gap-3">
+            <Logo label="Brand Assets" />
+            <span className="rounded bg-[var(--color-surface-600)] px-2 py-0.5 font-[var(--font-mono)] text-[10px] text-[var(--color-text-muted)]">
+              {totalAssets} arquivos
+            </span>
+          </div>
           <Link
             href="/"
             className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text-primary)]"

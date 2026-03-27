@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "./Logo";
 
 const navLinks = [
   { label: "Ecossistema", href: "#ecossistema" },
@@ -18,17 +19,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--color-surface-600)] bg-[var(--color-surface-900)]/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-4">
-          <img
-            src="https://bucket.savecompany.com.br/branding/save-co/arquivos-da-marca/logos-save-co/svg/save_co._nominal_branco_escuro.svg"
-            alt="Save Company"
-            className="h-7 w-auto"
-          />
-          <div className="hidden h-4 w-px bg-[var(--color-surface-500)] sm:block" />
-          <span className="hidden text-xs font-medium tracking-widest uppercase text-[var(--color-text-muted)] sm:block">
-            Brand Guidelines
-          </span>
-        </Link>
+        <Logo />
 
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
