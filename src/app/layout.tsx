@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Save Ecosystem — Brand Guidelines",
+  title: "Save Company — Brand Guidelines",
   description:
     "Single source of truth para identidade visual, tom de voz e padrões de design do ecossistema Save.",
 };
