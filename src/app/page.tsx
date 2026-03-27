@@ -269,7 +269,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-[1440px] px-6">
           <span className="section-label">[00] brand guidelines</span>
 
-          <h1 className="type-h2 mt-6 max-w-4xl">
+          <h1 className="type-h2 mt-4 max-w-4xl" style={{ fontSize: "clamp(2.5rem, 6vw, 5.5rem)" }}>
             O ecossistema{" "}
             <span className="text-[var(--color-brand-gold)]">Save</span>
           </h1>
