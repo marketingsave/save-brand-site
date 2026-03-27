@@ -15,7 +15,7 @@ export default function Logo({ label = "Brand Guidelines", href = "/", className
       <img
         src={SYMBOL_URL}
         alt="Save Company"
-        className="h-8 w-8 object-contain"
+        className="h-16 w-16 object-contain"
         loading="eager"
       />
       <div className="hidden h-4 w-px bg-[var(--color-surface-500)] sm:block" />
