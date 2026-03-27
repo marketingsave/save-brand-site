@@ -29,21 +29,16 @@ const footerSections = [
   },
 ];
 
+import Logo from "./Logo";
+
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--color-surface-600)] bg-[var(--color-surface-800)]">
       <div className="mx-auto max-w-[1440px] px-6 py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div>
-            <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--color-brand-gold)]">
-                <span className="text-lg font-bold text-[var(--color-surface-900)]">
-                  S
-                </span>
-              </div>
-              <span className="text-sm font-semibold text-[var(--color-text-primary)]">
-                Save Ecosystem
-              </span>
+            <div className="mb-4">
+              <Logo label="Brand Guidelines" />
             </div>
             <p className="text-sm leading-relaxed text-[var(--color-text-muted)]">
               O impulso para o seu próximo nível.
