@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  /* Save Ecosystem Brand Tokens */
+  --color-brand-gold: #FFD156;
+  --color-brand-gold-dark: #E5B94E;
+  --color-brand-green: #549B82;
+  --color-brand-navy: #1C2838;
+  --color-brand-blue-sky: #00C1FF;
+  --color-brand-blue-petrol: #01263E;
+  --color-brand-yellow: #FFFF00;
+
+  /* Surface colors - Dark theme */
+  --color-surface-900: #0A0A0A;
+  --color-surface-800: #111111;
+  --color-surface-700: #1A1A1A;
+  --color-surface-600: #222222;
+  --color-surface-500: #333333;
+
+  /* Text colors */
+  --color-text-primary: #F5F0E8;
+  --color-text-secondary: #A8A29E;
+  --color-text-muted: #6B6560;
+
+  /* Accent per brand */
+  --color-accent-saveco: #FFD156;
+  --color-accent-partners: #549B82;
+  --color-accent-educacao: #496B96;
+  --color-accent-libria: #00C1FF;
+  --color-accent-saveid: #FFFF00;
+
+  /* Functional */
+  --color-functional-blue: #2163E2;
+  --color-functional-green: #3ABF4C;
+  --color-functional-red: #CE4444;
+  --color-functional-purple: #8E11FF;
+  --color-functional-orange: #EFAF49;
+
+  /* Font families */
+  --font-display: "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface-900);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-brand-gold);
+  color: var(--color-surface-900);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-800);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-500);
+  border-radius: 3px;
+}
+
+/* Card hover effect */
+.brand-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--color-surface-600);
+}
+.brand-card:hover {
+  border-color: var(--color-surface-500);
+  transform: translateY(-2px);
+}
+
+/* Color swatch */
+.color-swatch {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.color-swatch:hover {
+  transform: scale(1.05);
+}
+
+/* Section label style like AIOX [00] */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Accordion */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-content.open {
+  max-height: 500px;
+}
+
+/* Typography showcase */
+.type-specimen {
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
