@@ -4,8 +4,20 @@ import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Logo from "@/components/Logo";
-import { brands } from "@/lib/assets-data";
+import { brands as allBrands } from "@/lib/assets-data";
 import type { BrandAsset } from "@/lib/assets-data";
+
+// Only show logo categories — hide all other materials
+const LOGO_CATEGORIES = ["Arquivos Da Marca", "Logo", "Logos"];
+
+const brands = allBrands
+  .map((brand) => ({
+    ...brand,
+    categories: brand.categories.filter((cat) =>
+      LOGO_CATEGORIES.includes(cat.name)
+    ),
+  }))
+  .filter((brand) => brand.categories.length > 0);
 
 const fileTypeIcons: Record<string, string> = {
   image: "🖼",
